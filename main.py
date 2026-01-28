@@ -16,7 +16,7 @@ def calc_entry_contents():
     if entry_contents:
         # get last character
         entry_last_char = entry_contents[-1]
-        # check if last character is label
+        # check if last character is digit
         if entry_last_char.isdigit():
             entry_1.delete(0, tk.END)
             entry_result = eval(entry_contents)
